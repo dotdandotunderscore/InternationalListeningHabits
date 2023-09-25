@@ -15,4 +15,4 @@ In the first part of this project the tempo, or beats per minute, of the top 50 
 
 (If viewing on mobile, make sure to switch to landscape mode)
 
-<iframe src="../../code/BPMVis/BPM.html" width="100%" height="600" allowtransparency="true" frameborder="0"></iframe>
+<iframe src="../../code/BPM/BPM.html" width="100%" height="600"></iframe>

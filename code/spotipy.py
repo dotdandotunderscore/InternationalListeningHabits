@@ -112,3 +112,32 @@ def get_spotify_top_50s(token):
 
     top_lists = [playlist[:9] == 'Top 50 - ' for playlist in all_names]
     return all_names[top_lists], all_ids[top_lists]
+
+def get_songs_from_playlists(token, playlist_ids):
+    all_song_names = []
+    all_song_ids =[]
+    for id in playlist_ids:
+        tracks = get_tracks_in_playlist(token, id)
+        songs = [track["track"] for track in tracks if track != None]
+        current_names = [song["name"] for song in songs]
+        current_ids = [song["id"] for song in songs]
+        num_items = len(current_names)
+        if num_items != 50:
+            for i in range(50-num_items):
+                current_names.append(None)
+                current_ids.append(None)
+        all_song_names.append(current_names)
+        all_song_ids.append(current_ids)
+    return all_song_names,all_song_ids
+    
+def get_audio_features_of_song_ids_from_playlists(token, song_ids):
+    all_afs = []
+    for ids in song_ids:
+        afs = get_audio_features_of_song_ids(token, [id for id in ids if id != None])
+        current_afs = [song for song in afs]
+        num_items = len(current_afs)
+        if num_items != 50:
+            for i in range(50-num_items):
+                current_afs.append(None)
+        all_afs.append(current_afs)
+    return all_afs

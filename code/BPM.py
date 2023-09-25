@@ -5,35 +5,6 @@ import plotly.graph_objects as go
 import os, time, datetime
 from spotipy import *
 
-def get_songs_from_playlists(token, playlist_ids):
-    all_song_names = []
-    all_song_ids =[]
-    for id in playlist_ids:
-        tracks = get_tracks_in_playlist(token, id)
-        songs = [track["track"] for track in tracks if track != None]
-        current_names = [song["name"] for song in songs]
-        current_ids = [song["id"] for song in songs]
-        num_items = len(current_names)
-        if num_items != 50:
-            for i in range(50-num_items):
-                current_names.append(None)
-                current_ids.append(None)
-        all_song_names.append(current_names)
-        all_song_ids.append(current_ids)
-    return all_song_names,all_song_ids
-    
-def get_audio_features_of_song_ids_from_playlists(token, song_ids):
-    all_afs = []
-    for ids in song_ids:
-        afs = get_audio_features_of_song_ids(token, [id for id in ids if id != None])
-        current_afs = [song for song in afs]
-        num_items = len(current_afs)
-        if num_items != 50:
-            for i in range(50-num_items):
-                current_afs.append(None)
-        all_afs.append(current_afs)
-    return all_afs
-
 current_date = datetime.date.today()
 token = get_token()
 
@@ -96,10 +67,10 @@ fig1 = px.scatter(all_df, x='Country', y='Beats per minute', hover_data=['Countr
 fig2 = px.line(averages_df, x='Country', y='Average BPM')
 fig3 = go.Figure(data=fig1.data + fig2.data, layout=fig1.layout)
 fig3['layout']['xaxis']['autorange'] = "reversed"
-fig3.update_coloraxes(showscale=False)
+fig3.update_coloraxes(showscale=False, legend_traceorder='reversed')
 # fig3.update_layout({
 #     'plot_bgcolor': 'rgba(84, 84, 84, 0.8)',
 #     'paper_bgcolor': 'rgba(84, 84, 84, 0.8)',
 # })
-fig3.write_html(os.getcwd()+'//code//BPMVis//BPM.html')
+fig3.write_html(os.getcwd()+'//code//BPM//BPM.html')
 fig3.show()
