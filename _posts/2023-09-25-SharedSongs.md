@@ -13,7 +13,7 @@ If your national language is spoken in many other countries, you will likely be 
 
 With similar language may come similar cultural aspects. This is an extremely complicated statement that would take several degrees, and a massive amount of sources and data to corroborate, but in lieu of that we can start to infer similarities in a countries' modern culture by looking at how much of their pop music is also popular in other countries.
 
-This post presents a series of graphs that, once again using the Spotify Top 50 playlists, shows how many songs in a countries Top 50 list are also in another countries' list. 
+This post presents a series of graphs that, once again using the Spotify Top 50 playlists, shows how many songs in a countries Top 50 list are also in another countries' list. The countries here are ordered by their distance away and that can be seen by hovering over any point.
 
 Some fairly obvious relationships are clear. Australia and New Zealand share a lot of their pop music, and lots of songs are shared between the group of Asian countries that are included in the data set. Some relationships are more strange though. Music popular in New Zealand is general fairly popular in the rest of the world, and Turkey has almost no songs in other countries top lists.
 
