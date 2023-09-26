@@ -21,63 +21,63 @@ A final nice observation is that you can clearly see the effects of national lan
 
 (If viewing on mobile, make sure to switch to landscape mode)
 
-###Australia
+### Australia
 <iframe src="../../code/SharedSongs/Australia.html" width="100%" height="600"></iframe>
-###Austria
+### Austria
 <iframe src="../../code/SharedSongs/Austria.html" width="100%" height="600"></iframe>
-###Belgium
+### Belgium
 <iframe src="../../code/SharedSongs/Belgium.html" width="100%" height="600"></iframe>
-###Denmark
+### Denmark
 <iframe src="../../code/SharedSongs/Denmark.html" width="100%" height="600"></iframe>
-###Estonia
+### Estonia
 <iframe src="../../code/SharedSongs/Estonia.html" width="100%" height="600"></iframe>
-###Finland
+### Finland
 <iframe src="../../code/SharedSongs/Finland.html" width="100%" height="600"></iframe>
-###France
+### France
 <iframe src="../../code/SharedSongs/France.html" width="100%" height="600"></iframe>
-###Germany
+### Germany
 <iframe src="../../code/SharedSongs/Germany.html" width="100%" height="600"></iframe>
-###Hong
+### Hong
 <iframe src="../../code/SharedSongs/Hong Kong.html" width="100%" height="600"></iframe>
-###Iceland
+### Iceland
 <iframe src="../../code/SharedSongs/Iceland.html" width="100%" height="600"></iframe>
-###Ireland
+### Ireland
 <iframe src="../../code/SharedSongs/Ireland.html" width="100%" height="600"></iframe>
-###Italy
+### Italy
 <iframe src="../../code/SharedSongs/Italy.html" width="100%" height="600"></iframe>
-###Latvia
+### Latvia
 <iframe src="../../code/SharedSongs/Latvia.html" width="100%" height="600"></iframe>
-###Lithuania
+### Lithuania
 <iframe src="../../code/SharedSongs/Lithuania.html" width="100%" height="600"></iframe>
-###Luxembourg
+### Luxembourg
 <iframe src="../../code/SharedSongs/Luxembourg.html" width="100%" height="600"></iframe>
-###Malaysia
+### Malaysia
 <iframe src="../../code/SharedSongs/Malaysia.html" width="100%" height="600"></iframe>
-###Mexico
+### Mexico
 <iframe src="../../code/SharedSongs/Mexico.html" width="100%" height="600"></iframe>
-###Netherlands
+### Netherlands
 <iframe src="../../code/SharedSongs/Netherlands.html" width="100%" height="600"></iframe>
-###New
+### New Zealand
 <iframe src="../../code/SharedSongs/New Zealand.html" width="100%" height="600"></iframe>
-###Norway
+### Norway
 <iframe src="../../code/SharedSongs/Norway.html" width="100%" height="600"></iframe>
-###Poland
+### Poland
 <iframe src="../../code/SharedSongs/Poland.html" width="100%" height="600"></iframe>
-###Portugal
+### Portugal
 <iframe src="../../code/SharedSongs/Portugal.html" width="100%" height="600"></iframe>
-###Singapore
+### Singapore
 <iframe src="../../code/SharedSongs/Singapore.html" width="100%" height="600"></iframe>
-###Spain
+### Spain
 <iframe src="../../code/SharedSongs/Spain.html" width="100%" height="600"></iframe>
-###Sweden
+### Sweden
 <iframe src="../../code/SharedSongs/Sweden.html" width="100%" height="600"></iframe>
-###Switzerland
+### Switzerland
 <iframe src="../../code/SharedSongs/Switzerland.html" width="100%" height="600"></iframe>
-###Taiwan
+### Taiwan
 <iframe src="../../code/SharedSongs/Taiwan.html" width="100%" height="600"></iframe>
-###Turkey
+### Turkey
 <iframe src="../../code/SharedSongs/Turkey.html" width="100%" height="600"></iframe>
-###United
+### United Kingdom
 <iframe src="../../code/SharedSongs/United Kingdom.html" width="100%" height="600"></iframe>
-###USA
+### USA
 <iframe src="../../code/SharedSongs/USA.html" width="100%" height="600"></iframe>
