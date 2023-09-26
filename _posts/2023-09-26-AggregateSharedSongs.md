@@ -13,5 +13,8 @@ Also included here is a plot showing the average number of shared songs across a
 
 (If viewing on mobile, make sure to switch to landscape mode)
 
+### Songs shared between Top 50 playlists
 <iframe src="../../code/SharedSongs/SharedHeatmap.html" width="100%" height="600"></iframe>
+
+## Average shared songs between Top 50 playlists
 <iframe src="../../code/SharedSongs/SharedHist.html" width="100%" height="600"></iframe>

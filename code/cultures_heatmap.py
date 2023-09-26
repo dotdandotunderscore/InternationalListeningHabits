@@ -49,7 +49,7 @@ datas_text = [[str(y) for y in x] for x in all_shared_num]
 fig = go.Figure(data=go.Heatmap(z=all_shared_num, x=countries, y=countries, type='heatmap', colorscale='Viridis'))
 fig['layout']['yaxis']['autorange'] = "reversed"
 fig['layout']['xaxis'].update(side='top')
-fig.update_layout(title_text="Songs shared between Top 50 playlists")
+# fig.update_layout(title_text="Songs shared between Top 50 playlists")
 fig['data'][0]['showscale'] = True
 fig.update_layout(margin=dict(t=100, l=200))
 fig.write_html(os.getcwd()+f'//code//SharedSongs//SharedHeatmap.html')
@@ -65,6 +65,6 @@ average_df = pd.DataFrame({
 })
 fig = px.histogram(average_df, x='Country', y="Average shared songs")
 fig['layout']['xaxis']['autorange'] = "reversed"
-fig.update_layout(title_text='Average shared songs between Top 50 playlists',yaxis_title_text='Average shared songs')
+fig.update_layout(yaxis_title_text='Average shared songs')
 fig.write_html(os.getcwd()+f'//code//SharedSongs//SharedHist.html')
 fig.show()
