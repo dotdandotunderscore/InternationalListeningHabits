@@ -48,8 +48,10 @@ datas_text = [[str(y) for y in x] for x in all_shared_num]
 # fig = ff.create_annotated_heatmap(all_shared_num, x=countries, y=countries, annotation_text=datas_text, colorscale='Viridis')
 fig = go.Figure(data=go.Heatmap(z=all_shared_num, x=countries, y=countries, type='heatmap', colorscale='Viridis'))
 fig['layout']['yaxis']['autorange'] = "reversed"
+fig['layout']['xaxis'].update(side='top')
 fig.update_layout(title_text="Songs shared between Top 50 playlists")
 fig['data'][0]['showscale'] = True
+fig.update_layout(margin=dict(t=100, l=200))
 fig.write_html(os.getcwd()+f'//code//SharedSongs//SharedHeatmap.html')
 fig.show()
 
