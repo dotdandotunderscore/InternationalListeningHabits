@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 import plotly.express as px
-import plotly.figure_factory as ff
+# import plotly.figure_factory as ff
+import plotly.graph_objects as go
 import datetime, time
 from spotipy import *
 
@@ -44,9 +45,11 @@ for i in range(num_countries):
 
 datas_text = [[str(y) for y in x] for x in all_shared_num]
 
-fig = ff.create_annotated_heatmap(all_shared_num, x=countries, y=countries, annotation_text=datas_text, colorscale='Viridis')
+# fig = ff.create_annotated_heatmap(all_shared_num, x=countries, y=countries, annotation_text=datas_text, colorscale='Viridis')
+fig = go.Figure(data=go.Heatmap(z=all_shared_num, x=countries, y=countries, type='heatmap', colorscale='Viridis'))
 fig['layout']['yaxis']['autorange'] = "reversed"
 fig.update_layout(title_text="Songs shared between Top 50 playlists")
+fig['data'][0]['showscale'] = True
 fig.write_html(os.getcwd()+f'//code//SharedSongs//SharedHeatmap.html')
 fig.show()
 
