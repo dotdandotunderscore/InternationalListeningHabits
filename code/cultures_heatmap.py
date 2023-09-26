@@ -51,7 +51,6 @@ fig['layout']['yaxis']['autorange'] = "reversed"
 fig['layout']['xaxis'].update(side='top')
 # fig.update_layout(title_text="Songs shared between Top 50 playlists")
 fig['data'][0]['showscale'] = True
-fig.update_layout(margin=dict(t=100, l=200))
 fig.write_html(os.getcwd()+f'//code//SharedSongs//SharedHeatmap.html')
 fig.show()
 
